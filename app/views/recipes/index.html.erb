@@ -1,0 +1,33 @@
+<%# 1 + 1 %>
+<%#= 2 + 2  %>
+
+<div class="row">
+
+  <% @recipes.each do |recipe| %>
+
+    <div class="col-xs-12 col-sm-6 col-md-4 my-2">
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="<%= recipe.image %>" alt="Card image cap">
+        <div class="card-body">
+<!--          <a href="" title="<%#= recipe.title%>"><h5 class="card-title"><%#= recipe.title[0..20]+"..." %></h5></a>-->
+<!--          <a href="" title="<%#= recipe.subtitle.downcase.capitalize%>"><p class="card-text"><%#= recipe.subtitle.downcase.capitalize[0..30]+"..." %></p></a>-->
+
+          <h5 class="card-title"><%= recipe.title%></h5>
+          <p class="card-text"><%= recipe.subtitle.downcase.capitalize%></p>
+
+
+          <a href="<%= recipe_path(recipe) %>" class="btn btn-primary">View</a>
+          <!--          <a href="/recipes/<%#= recipe.id %>" class="btn btn-primary">View</a>-->
+
+          <a href="<%= recipe_path(recipe) + "/edit" %>" class="btn btn-primary">Edit</a>
+
+
+        </div>
+      </div>
+
+    </div>
+
+  <% end %>
+
+</div>
