@@ -1,13 +1,38 @@
-# README
+# Ruby version 2.3.3
+# Rails version 5.1.6
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+gem install bundler
+rails -v
+rails new test_app
+cd test_app
 
-Things you may want to cover:
+bundler exec rails server
+rails s
+rails s -p 3005
 
-* Ruby version
+rails generate controller home index
 
-* System dependencies
+- Obrisati CoffeeScript iz fajla Gemfile!! (23. linija koda)
+Kada menjamo bilo sta u Gemfile-u moramo u cmd-u otkucati - bundler install
+
+- rails g scaffold ice_cream name:string decription:text
+
+(rake i rails je isto u novim verzijama)
+
+- rails db:migrate (Kad imamo neke promene nad bazom moramo otkucati ovu liniju koda - migrate sluze za promenu stanja baze)
+
+- rails db:rollback SETAP=1 (brisanje promena nad bazom)
+
+- rails d scaffold ice_cream (Brisanje tabele)
+
+
+- atom .
+- irb (u cmd-u)
+
+
+
+-alt+ctrl+l - Sredi kod
+
 
 * Configuration
 
@@ -16,9 +41,3 @@ Things you may want to cover:
 * Database initialization
 
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
