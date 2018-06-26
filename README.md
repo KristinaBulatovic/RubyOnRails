@@ -6,7 +6,6 @@ gem install bundler
 rails -v
 rails new test_app
 cd test_app
-
 ---------------------------------------------------
 bundler exec rails server
 rails s
