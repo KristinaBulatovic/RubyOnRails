@@ -1,12 +1,11 @@
 # Ruby version 2.3.3
 # Rails version 5.1.6
-
----------------------------------------------------
+/n
 gem install bundler
 rails -v
 rails new test_app
 cd test_app
----------------------------------------------------
+/n
 bundler exec rails server
 rails s
 rails s -p 3005
