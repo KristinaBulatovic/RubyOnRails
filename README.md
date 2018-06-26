@@ -12,32 +12,18 @@ rails s -p 3005
 
 rails generate controller home index
 
-- Obrisati CoffeeScript iz fajla Gemfile!! (23. linija koda)
-Kada menjamo bilo sta u Gemfile-u moramo u cmd-u otkucati - bundler install
+- Delete CoffeeScript from the file Gemfile!! (23. lines of code)
+When changing anything in Gemfile, we need to type in cmd - bundler install
 
-- rails g scaffold ice_cream name:string decription:text
+(rake and rails is the same in the new versions)
 
-(rake i rails je isto u novim verzijama)
+rails g scaffold ice_cream name:string decription:text (Creating a table)
+rails db:migrate (When we have some changes over the base, we need to type this line of code - migrate the service to change the state of the database)
+rails db:rollback SETAP=1 (deleting changes over the database)
+rails d scaffold ice_cream (Deleting a table)
 
-- rails db:migrate (Kad imamo neke promene nad bazom moramo otkucati ovu liniju koda - migrate sluze za promenu stanja baze)
-
-- rails db:rollback SETAP=1 (brisanje promena nad bazom)
-
-- rails d scaffold ice_cream (Brisanje tabele)
-
-
-- atom .
-- irb (u cmd-u)
+atom . (in cmd)
+irb (in cmd)
 
 
-
--alt+ctrl+l - Sredi kod
-
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
+alt+ctrl+l
